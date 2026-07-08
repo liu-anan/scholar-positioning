@@ -290,6 +290,11 @@ ls ~/.codex/skills/scholar-positioning
 references/users/template/preferences.template.md
 ```
 
+如果你希望 AI 直接带你完成第一次配置，优先用这份首次启动问答：
+
+- [首次启动问答 prompt](./references/users/onboarding-prompt.md)
+- [onboarding 说明](./references/users/onboarding.md)
+
 如果你想直接参考现成示例，看这里：
 
 - [自动驾驶示例](./references/users/examples/automated-driving.preferences.example.md)
@@ -428,6 +433,7 @@ references/users/template/preferences.template.md
 参考：
 
 - [references/users/onboarding.md](./references/users/onboarding.md)
+- [references/users/onboarding-prompt.md](./references/users/onboarding-prompt.md)
 - [references/users/examples/README.md](./references/users/examples/README.md)
 
 最少建议配置这 5 类：
@@ -631,9 +637,10 @@ roadmap 是派生产物。
 1. [README.md](./README.md)
 2. [SKILL.md](./SKILL.md)
 3. [references/users/onboarding.md](./references/users/onboarding.md)
-4. [references/users/template/preferences.template.md](./references/users/template/preferences.template.md)
-5. [references/users/examples/README.md](./references/users/examples/README.md)
-6. [references/retrieval-protocol.md](./references/retrieval-protocol.md)
+4. [references/users/onboarding-prompt.md](./references/users/onboarding-prompt.md)
+5. [references/users/template/preferences.template.md](./references/users/template/preferences.template.md)
+6. [references/users/examples/README.md](./references/users/examples/README.md)
+7. [references/retrieval-protocol.md](./references/retrieval-protocol.md)
 
 如果你想看“这个 skill 的个性化层长什么样”，看这里：
 
