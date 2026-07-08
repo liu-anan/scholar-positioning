@@ -27,3 +27,7 @@
 - [automated-driving.preferences.example.md](./automated-driving.preferences.example.md)
 - [accident-safety.preferences.example.md](./accident-safety.preferences.example.md)
 - [energy-management.preferences.example.md](./energy-management.preferences.example.md)
+
+另外提供 1 份 onboarding 完成后的成品形态示例：
+
+- [onboarding-output.preferences.example.md](./onboarding-output.preferences.example.md)
