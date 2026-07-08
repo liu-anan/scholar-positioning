@@ -260,7 +260,70 @@ scholar-positioning/
 
 ---
 
-## 六、第一次使用怎么开始
+## 六、5 分钟快速开始
+
+如果你不想先通读完整协议，可以直接按下面做一遍。
+
+### 第 1 步：安装
+
+```bash
+git clone https://github.com/liu-anan/scholar-positioning.git ~/.codex/skills/scholar-positioning
+```
+
+### 第 2 步：确认文件在
+
+```bash
+ls ~/.codex/skills/scholar-positioning
+```
+
+你至少应该能看到：
+
+- `SKILL.md`
+- `README.md`
+- `references/`
+
+### 第 3 步：先不要改协议，只做最小 personalize
+
+如果你是第一次用，先复制模板，再按自己的阅读习惯改最少几项：
+
+```text
+references/users/template/preferences.template.md
+```
+
+如果你想直接参考现成示例，看这里：
+
+- [自动驾驶示例](./references/users/examples/automated-driving.preferences.example.md)
+- [事故安全示例](./references/users/examples/accident-safety.preferences.example.md)
+- [能量管理示例](./references/users/examples/energy-management.preferences.example.md)
+
+### 第 4 步：先跑一个单学者请求
+
+先用 `full-profile` 验证这套 skill 是否符合你的预期：
+
+```text
+使用 scholar-positioning，给 Donald Norman 建一个 full-profile。
+```
+
+### 第 5 步：再跑一个多学者请求
+
+确认单人档案没问题后，再试 `positioning`：
+
+```text
+使用 scholar-positioning，把 Trent Victor、Gustav Markkula、Natasha Merat 连起来做 positioning。
+```
+
+### 第 6 步：检查结果是不是走对模式
+
+你应该重点检查两件事：
+
+1. 单学者请求有没有只生成 `full-profile`
+2. 多学者 `positioning` 有没有先建立可复用 profile，再做连接
+
+如果这两步都对，说明这个 skill 已经基本接上你的工作流了。
+
+---
+
+## 七、第一次使用怎么开始
 
 ### 1. 最简单的用法
 
@@ -338,7 +401,7 @@ scholar-positioning/
 
 ---
 
-## 七、第一次个性化配置怎么做
+## 八、第一次个性化配置怎么做
 
 这是很多人最关心的地方。
 
@@ -365,6 +428,7 @@ scholar-positioning/
 参考：
 
 - [references/users/onboarding.md](./references/users/onboarding.md)
+- [references/users/examples/README.md](./references/users/examples/README.md)
 
 最少建议配置这 5 类：
 
@@ -393,6 +457,12 @@ scholar-positioning/
 references/users/your-name/preferences.md
 ```
 
+如果你只是想快速起步，不想从空白模板填起，可以先复制最接近你的那份示例，再做少量修改：
+
+- [自动驾驶示例](./references/users/examples/automated-driving.preferences.example.md)
+- [事故安全示例](./references/users/examples/accident-safety.preferences.example.md)
+- [能量管理示例](./references/users/examples/energy-management.preferences.example.md)
+
 ### 4. 哪些东西适合个性化，哪些不适合
 
 适合放进个性化层的：
@@ -417,7 +487,7 @@ references/users/your-name/preferences.md
 
 ---
 
-## 八、适合哪些团队一起用
+## 九、适合哪些团队一起用
 
 这个仓库不是只给一个人用的。
 
@@ -438,11 +508,17 @@ references/users/your-name/preferences.md
 - 按方向补自己的 `domain pack`
 - 每个人维护自己的 `user overlay`
 
+当前仓库里已经有：
+
+- [automated-driving 领域说明](./references/domains/automated-driving/README.md)
+- [accident-safety 占位说明](./references/domains/accident-safety/README.md)
+- [energy-management 占位说明](./references/domains/energy-management/README.md)
+
 这样后面维护成本最低，也不容易越改越散。
 
 ---
 
-## 九、几个常见误解
+## 十、几个常见误解
 
 ### 误解 1：给一串学者名字，就一定要出 map
 
@@ -474,7 +550,7 @@ references/users/your-name/preferences.md
 
 ---
 
-## 十、建议怎么用这个 skill
+## 十一、建议怎么用这个 skill
 
 如果你是第一次上手，建议按下面的顺序：
 
@@ -498,7 +574,7 @@ references/users/your-name/preferences.md
 
 ---
 
-## 十一、这个仓库当前的状态
+## 十二、这个仓库当前的状态
 
 当前版本已经具备这些能力：
 
@@ -508,6 +584,13 @@ references/users/your-name/preferences.md
 - taxonomy seed
 - roadmap 派生协议
 - `core + domain + user` 的兼容式分层架构
+
+当前还额外提供了：
+
+- 新手向中文 README
+- `Quick Start`
+- 3 份最小 personalize 示例
+- 2 个额外领域占位目录，方便团队后续扩展
 
 当前版本的实现策略是：
 
@@ -522,7 +605,7 @@ references/users/your-name/preferences.md
 
 ---
 
-## 十二、给维护者的建议
+## 十三、给维护者的建议
 
 如果你准备把这个 skill 继续长期维护下去，建议坚持下面三条：
 
@@ -541,7 +624,7 @@ roadmap 是派生产物。
 
 ---
 
-## 十三、快速入口
+## 十四、快速入口
 
 如果你现在就想开始，按这个顺序看：
 
@@ -549,11 +632,15 @@ roadmap 是派生产物。
 2. [SKILL.md](./SKILL.md)
 3. [references/users/onboarding.md](./references/users/onboarding.md)
 4. [references/users/template/preferences.template.md](./references/users/template/preferences.template.md)
-5. [references/retrieval-protocol.md](./references/retrieval-protocol.md)
+5. [references/users/examples/README.md](./references/users/examples/README.md)
+6. [references/retrieval-protocol.md](./references/retrieval-protocol.md)
 
 如果你想看“这个 skill 的个性化层长什么样”，看这里：
 
 - [references/users/liutingnan/preferences.md](./references/users/liutingnan/preferences.md)
+- [references/users/examples/automated-driving.preferences.example.md](./references/users/examples/automated-driving.preferences.example.md)
+- [references/users/examples/accident-safety.preferences.example.md](./references/users/examples/accident-safety.preferences.example.md)
+- [references/users/examples/energy-management.preferences.example.md](./references/users/examples/energy-management.preferences.example.md)
 
 ---
 
