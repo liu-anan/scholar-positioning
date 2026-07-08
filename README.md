@@ -38,6 +38,7 @@ This skill is built to resist those failure modes.
 - [references/core/](./references/core/README.md): stable protocol layer
 - [references/domains/](./references/domains/automated-driving/README.md): domain packs
 - [references/users/](./references/users/liutingnan/README.md): user overlays
+- [references/users/onboarding.md](./references/users/onboarding.md): first-run personalization guidance
 - [references/source-pack.md](./references/source-pack.md): intermediate artifact logic
 - [references/retrieval-protocol.md](./references/retrieval-protocol.md): public-source retrieval order and stop conditions
 - [references/source-pack-template.md](./references/source-pack-template.md): working scaffold
@@ -146,6 +147,7 @@ The current public package ships with:
 
 - one starter domain pack: automated driving / transport human factors adjacent work
 - one example user overlay: `liutingnan`
+- one onboarding/template path for new users
 
 This is an architecture direction, not a hard dependency.
 The current package still keeps the original top-level references active for compatibility.
