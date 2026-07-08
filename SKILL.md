@@ -7,6 +7,35 @@ description: Build evidence-bounded scholar profiles and scholar positioning map
 
 Build scholar artifacts with explicit evidence and coverage boundaries. Allow inference, but never leave it unlabeled. Write for humans first.
 
+## Layered Architecture
+
+Treat this skill as one architecture with three layers:
+
+1. `core`
+   - stable protocol
+   - artifact model
+   - evidence / coverage rules
+   - source-pack and roadmap workflow
+2. `domain pack`
+   - seed taxonomy
+   - alias rules
+   - recurring benchmark patterns for a domain cluster
+3. `user profile`
+   - language defaults
+   - summary density
+   - human-facing vs AI-facing reading bias
+   - naming and presentation preferences
+
+Current public starter default:
+
+- domain pack: transportation human factors / automated driving / HRI adjacent seed
+- user profile: Chinese-first, human-readable-first example overlay
+
+Compatibility rule:
+
+- keep the current top-level reference paths working
+- do not force a breaking rewrite while moving toward `core + domains + users`
+
 ## Core Protocol
 
 - Keep `profile`, `positioning`, and `roadmap` separate.
