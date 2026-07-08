@@ -31,6 +31,8 @@ Current public starter default:
 - domain pack: transportation human factors / automated driving / HRI adjacent seed
 - user profile: Chinese-first, human-readable-first example overlay
 
+For the included example overlay, see [references/users/liutingnan/preferences.md](references/users/liutingnan/preferences.md).
+
 Compatibility rule:
 
 - keep the current top-level reference paths working
@@ -48,6 +50,7 @@ Compatibility rule:
 - Do not force links to the user's project unless the task explicitly asks for benchmarking, transfer, or roadmap discussion.
 - Default to Chinese prose; keep proper nouns, technical terms, and stable labels in English when that improves precision.
 - Use Chinese-first section headings in saved artifacts. Add English only in parentheses when it improves precision.
+- For the current example presentation overlay, follow [references/users/liutingnan/preferences.md](references/users/liutingnan/preferences.md) unless a task-specific need overrides it.
 
 ## Core vs Seed Layer
 
