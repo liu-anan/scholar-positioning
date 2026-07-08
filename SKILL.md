@@ -32,6 +32,7 @@ Current public starter default:
 - user profile: Chinese-first, human-readable-first example overlay
 
 For the included example overlay, see [references/users/liutingnan/preferences.md](references/users/liutingnan/preferences.md).
+For first-run personalization guidance, see [references/users/onboarding.md](references/users/onboarding.md).
 
 Compatibility rule:
 
