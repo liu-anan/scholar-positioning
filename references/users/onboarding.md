@@ -19,8 +19,25 @@ Minimum onboarding topics:
 Recommended outcome:
 
 - create a user-specific preferences file based on `users/template/preferences.template.md`
+- use a short first-run onboarding prompt instead of freeform profile guessing
+
+Recommended execution order:
+
+1. ask the first-run onboarding questions
+2. summarize the user's answers back in compact form
+3. write or propose a user-specific `preferences.md`
+4. ask for confirmation before changing an existing preferences file
+
+Primary execution prompt:
+
+- see [onboarding-prompt.md](./onboarding-prompt.md)
 
 Optional later refinement:
 
 - after repeated use, propose updates to the user profile
 - require explicit confirmation before writing changes
+
+Guardrail:
+
+- onboarding is for presentation defaults and task tendency only
+- onboarding should not rewrite artifact model, router logic, evidence protocol, or coverage protocol
