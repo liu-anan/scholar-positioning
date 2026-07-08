@@ -1,0 +1,4 @@
+interface:
+  display_name: "Scholar Positioning"
+  short_description: "构建带证据边界的学者档案与定位图"
+  default_prompt: "Use $scholar-positioning to build a scholar profile or a multi-scholar positioning map with explicit evidence strength and coverage boundaries."
