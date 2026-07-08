@@ -103,6 +103,10 @@ If the user does not yet want to write files:
 - provide the draft only
 - do not silently persist it
 
+Reference shape:
+
+- see [examples/onboarding-output.preferences.example.md](./examples/onboarding-output.preferences.example.md)
+
 ## Minimal mapping guidance
 
 - `中文` -> `default language: Chinese`
