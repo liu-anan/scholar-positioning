@@ -35,6 +35,9 @@ This skill is built to resist those failure modes.
 ## Package structure
 
 - [SKILL.md](./SKILL.md): main protocol
+- [references/core/](./references/core/README.md): stable protocol layer
+- [references/domains/](./references/domains/automated-driving/README.md): domain packs
+- [references/users/](./references/users/liutingnan/README.md): user overlays
 - [references/source-pack.md](./references/source-pack.md): intermediate artifact logic
 - [references/retrieval-protocol.md](./references/retrieval-protocol.md): public-source retrieval order and stop conditions
 - [references/source-pack-template.md](./references/source-pack-template.md): working scaffold
@@ -75,6 +78,16 @@ It is only justified when upstream `positioning` is already stable enough.
 The included taxonomy is a starter vocabulary, not a closed ontology.
 It is meant to be maintained as the scholar corpus grows.
 
+### 5. Separate architecture from personalization
+
+This package is moving toward:
+
+- `core`
+- `domain packs`
+- `user overlays`
+
+The goal is to keep one shared architecture while allowing different users and research groups to personalize output defaults without forking the protocol.
+
 ## Typical use cases
 
 ### Single scholar
@@ -110,6 +123,32 @@ Use `roadmap` only after a stable `positioning` exists and only when you explici
 - Chinese-first output shape is the default in this package because the original working context used Chinese-first artifacts.
 - Proper nouns, technical terms, and stable labels may remain in English.
 - The protocol itself is general and does not depend on one domain or one scholar set.
+
+## Layered customization
+
+The intended long-term structure is:
+
+1. `core`
+   - artifact model
+   - evidence protocol
+   - source-pack workflow
+   - roadmap workflow
+2. `domain pack`
+   - taxonomy seed
+   - alias rules
+   - recurring benchmark patterns
+3. `user overlay`
+   - language defaults
+   - summary density
+   - presentation preferences
+
+The current public package ships with:
+
+- one starter domain pack: automated driving / transport human factors adjacent work
+- one example user overlay: `liutingnan`
+
+This is an architecture direction, not a hard dependency.
+The current package still keeps the original top-level references active for compatibility.
 
 ## What this package does not include
 
