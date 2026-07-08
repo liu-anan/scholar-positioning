@@ -31,6 +31,7 @@ Recommended execution order:
 Primary execution prompt:
 
 - see [onboarding-prompt.md](./onboarding-prompt.md)
+- for a saved target example, see [examples/onboarding-output.preferences.example.md](./examples/onboarding-output.preferences.example.md)
 
 Optional later refinement:
 
