@@ -11,3 +11,8 @@ Suggested flow:
 
 This is optional.
 If no user profile is configured, the package can still run with its current default example overlay.
+
+See also:
+
+- [../user-overlay-contract.md](../user-overlay-contract.md)
+- [../onboarding.md](../onboarding.md)
