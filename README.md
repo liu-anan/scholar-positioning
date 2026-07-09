@@ -210,6 +210,13 @@
 
 这个示例只是演示“怎么做 overlay”，不是要求所有人都照抄。
 
+如果你想快速理解“新用户该怎么走、当前哪里才是真正生效入口、后续扩展有哪些硬边界”，优先看：
+
+- [新用户黄金路径](./references/start-here.md)
+- [source-of-truth 说明](./references/source-of-truth.md)
+- [domain pack contract](./references/domains/domain-pack-contract.md)
+- [user overlay contract](./references/users/user-overlay-contract.md)
+
 ---
 
 ## 五、安装方法
