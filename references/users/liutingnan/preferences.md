@@ -1,9 +1,10 @@
-# Preferences: liutingnan
+# Example Preferences
 
-This file records one example user-level presentation overlay.
+This file records one concrete example user-level presentation overlay.
 
 These are not core protocol rules.
 They are overlay preferences that shape how outputs are written and arranged.
+For new installations, start from `references/users/template/preferences.template.md` or `references/users/examples/`.
 
 ## 1. Language defaults
 
