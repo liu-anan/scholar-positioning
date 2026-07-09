@@ -5,7 +5,7 @@ description: Build evidence-bounded scholar profiles and scholar positioning map
 
 # Scholar Positioning
 
-Build scholar artifacts with explicit evidence and coverage boundaries. Allow inference, but never leave it unlabeled. Write for humans first.
+Build scholar artifacts with explicit evidence and coverage boundaries. Allow inference, but never leave it unlabeled. Keep outputs explicit, legible, and auditable.
 
 ## Layered Architecture
 
@@ -26,12 +26,13 @@ Treat this skill as one architecture with three layers:
    - human-facing vs AI-facing reading bias
    - naming and presentation preferences
 
-Current public starter default:
+Current public package state:
 
 - domain pack: transportation human factors / automated driving / HRI adjacent seed
-- user profile: Chinese-first, human-readable-first example overlay
+- user overlay architecture: supported, but no package-level personal default is bound
 
-For the included example overlay, see [references/users/liutingnan/preferences.md](references/users/liutingnan/preferences.md).
+For the active-overlay entry model, see [references/users/active-overlay.md](references/users/active-overlay.md).
+For reusable example overlays, see [references/users/examples/README.md](references/users/examples/README.md).
 For first-run personalization guidance, see [references/users/onboarding.md](references/users/onboarding.md).
 
 Compatibility rule:
@@ -49,9 +50,9 @@ Compatibility rule:
 - If required scholar dossiers are missing during `build-map`, build the missing `full-profile` artifacts first, then continue the map.
 - Do not infer `profile` from `map`, and do not use `map` to backfill missing scholar dossiers.
 - Do not force links to the user's project unless the task explicitly asks for benchmarking, transfer, or roadmap discussion.
-- Default to Chinese prose; keep proper nouns, technical terms, and stable labels in English when that improves precision.
-- Use Chinese-first section headings in saved artifacts. Add English only in parentheses when it improves precision.
-- For the current example presentation overlay, follow [references/users/liutingnan/preferences.md](references/users/liutingnan/preferences.md) unless a task-specific need overrides it.
+- Treat output language, heading language, summary placement, and evidence-boundary placement as presentation defaults controlled by the active user overlay when configured.
+- If no active user overlay is configured, use neutral presentation defaults and preserve section function, precision, and readability.
+- If an active user overlay is configured in the current installation, follow [references/users/active-overlay.md](references/users/active-overlay.md) for presentation defaults unless a task-specific need overrides it.
 
 ## Core vs Seed Layer
 
@@ -95,17 +96,18 @@ Output:
 
 Required sections:
 
-- 基本信息
-- 学术谱系
-- 研究轨迹
-- 方法论印章
-- 核心发现实质分析
-- 学者类型定位
-- 竞争格局
+- Basic Information
+- Intellectual Genealogy
+- Research Trajectory
+- Method Stamp
+- Substantive Analysis of Core Findings
+- Researcher Type
+- Competitive Landscape
 - Positioning Summary
-- 证据边界
+- Evidence Boundary
 
-Use these saved-artifact headings by default:
+Displayed headings should follow the active overlay when configured.
+For a Chinese-first overlay, one valid rendering is:
 
 - `## 基本信息`
 - `## 学术谱系`
@@ -117,15 +119,15 @@ Use these saved-artifact headings by default:
 - `## Positioning Summary`
 - `## 证据边界`
 
-Default reading shape for `full-profile`:
+Presentation layers for `full-profile`:
 
-1. **顶部摘要层**: a short quick-read block for human scanning
-2. **正文档案层**: the full dossier with the complete scholar-deconstruction content
+1. optional summary layer when the active overlay or task requests summary-first reading
+2. dossier layer containing the complete scholar-deconstruction content
 
 The summary layer is allowed to compress.
 The dossier layer is not allowed to replace depth with summary bullets.
 
-Treat the saved artifact as a **summary-on-top dossier**, not as a normalized map-input brief.
+Treat the saved artifact as a dossier in substance, not as a normalized map-input brief.
 If a human reader can only recover the scholar's structure by reading the quick summary, the artifact is too thin.
 
 ### `full-profile` completion standard
@@ -165,7 +167,7 @@ Even when working from scratch, preserve these depth layers whenever the evidenc
 
 Allowed:
 
-- add a short quick-read summary at the top
+- add a short quick-read summary when the active overlay or task requests it
 - tighten repetitive wording
 - normalize top-level section order
 
@@ -187,28 +189,28 @@ Compression test:
 
 For `full-profile`, the main body should usually feel closer to a compact monograph note than to a schema dump.
 
-Default shape:
+Canonical dossier shape:
 
-1. `## 快速摘要`
-2. `## 基本信息`
-3. `## 学术谱系`
-4. `## 研究轨迹`
-5. `## 方法论印章`
-6. `## 核心发现实质分析`
-7. `## 学者类型定位`
-8. `## 竞争格局`
-9. `## Positioning Summary`
-10. `## 证据边界`
+1. optional summary layer when requested by the active overlay or task
+2. Basic Information
+3. Intellectual Genealogy
+4. Research Trajectory
+5. Method Stamp
+6. Substantive Analysis of Core Findings
+7. Researcher Type
+8. Competitive Landscape
+9. Positioning Summary
+10. Evidence Boundary
 
 Within the dossier body, prefer this density pattern:
 
-- `基本信息`: factual inventory with enough path detail to locate the scholar historically and institutionally
-- `学术谱系`: diagram plus explanatory background, not diagram alone
-- `研究轨迹`: multi-phase narrative with explicit phase logic and attached representative works when available
-- `方法论印章`: formation logic, solved problem, and limits, not just a signature phrase
-- `核心发现实质分析`: interpreted contribution clusters, not label lists
-- `学者类型定位`: type label plus contrasts, not type label alone
-- `竞争格局`: direct neighbors, alternative framings, open vs saturated space
+- `Basic Information`: factual inventory with enough path detail to locate the scholar historically and institutionally
+- `Intellectual Genealogy`: diagram plus explanatory background, not diagram alone
+- `Research Trajectory`: multi-phase narrative with explicit phase logic and attached representative works when available
+- `Method Stamp`: formation logic, solved problem, and limits, not just a signature phrase
+- `Substantive Analysis of Core Findings`: interpreted contribution clusters, not label lists
+- `Researcher Type`: type label plus contrasts, not type label alone
+- `Competitive Landscape`: direct neighbors, alternative framings, open vs saturated space
 
 If the gathered source base supports appendicial layers such as uncertainty notes, key timeline, milestone works, or source notes, preserve them inside the relevant sections or as a short closing note instead of deleting them for neatness.
 
@@ -750,13 +752,16 @@ Minimum structure:
   - which directions are already saturated
   - which gaps are genuinely open
   - where uncertainty remains about the gap claim
-- if the source dossier has a stronger local structure such as `同方向主要学者/团队`, `已饱和的细分方向`, `尚存的真正空白`, preserve that stronger structure in Chinese-first form
+- if the source dossier has a stronger local structure such as `同方向主要学者/团队`, `已饱和的细分方向`, `尚存的真正空白`, preserve that stronger structure in the active overlay's heading language or the task language
 
 Do not make this section optional in execution, even if evidence is thinner than ideal. Mark uncertainty when needed.
 
 ## Quick-read block for `full-profile`
 
 At the top of a saved `full-profile`, before the main dossier sections, include:
+
+When the active overlay or task requests a summary-first `full-profile`, include a short quick summary block near the top.
+One Chinese-first rendering is:
 
 ```md
 ## 快速摘要
@@ -1060,24 +1065,25 @@ Every positioning map should help answer:
 - which adjacent scholars outside the current scope should be added next as new `full-profile` candidates
 - which links are evidence-backed versus hypothesis-only
 
-Required section order for `Scholar_Positioning__{focus}__{scope}.md`:
+Required section functions for `Scholar_Positioning__{focus}__{scope}.md`:
 
-1. 快速摘要
-2. 一句话总览
-3. 关注点与范围
-4. 关键差异与分工
-5. 主簇
-6. 关系速写
-7. 关键桥梁
-8. 当前局面
-9. 对标定位
-10. 方法与路线比较
-11. 共同进展与方向假设
-12. 迁移与 idea 重构
-13. 补档建议
-14. 附录：证据边界与备注
+1. quick summary or equivalent scan layer when requested by the active overlay or task
+2. one-line overview
+3. scope and focus
+4. key differences and role split
+5. main clusters
+6. relationship sketch
+7. key bridges
+8. current state
+9. benchmark positioning
+10. method and route comparison
+11. shared progress and direction hypotheses
+12. transfer and idea reconstruction
+13. suggested profiles to add
+14. evidence boundary and notes
 
-At the top, include:
+If the active overlay or task requests summary-first positioning, include top summary blocks.
+One Chinese-first rendering is:
 
 ```md
 ## 快速摘要
@@ -1089,8 +1095,6 @@ At the top, include:
 - Main caution:
 ```
 
-And also include:
-
 ```md
 ## 当前局面
 
@@ -1101,15 +1105,12 @@ And also include:
 - Whether roadmap discussion is justified:
 ```
 
-Use this reading rhythm:
+Use a reading rhythm that:
 
-1. tell the reader the current pattern
-2. give a one-line overview
-3. state the key differences between scholars early
-4. show the major clusters
-5. show the relationship sketch
-6. explain bridges and benchmark roles
-7. move evidence boundaries to the appendix layer
+1. tells the reader the current pattern
+2. exposes key differences early enough for human scanning
+3. shows clusters, bridges, and benchmark roles clearly
+4. keeps evidence boundaries visible in the placement requested by the active overlay or task
 
 For `关键差异与分工`, do not wait until later sections to reveal how the scholars differ.
 This section should let a human reader immediately answer:
@@ -1118,7 +1119,7 @@ This section should let a human reader immediately answer:
 - this scholar is not best for what
 - this scholar differs from the others mainly on which layer
 
-Preferred compact format:
+One valid compact format when a Chinese-first overlay is active:
 
 ```md
 ## 关键差异与分工
