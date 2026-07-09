@@ -32,6 +32,7 @@ Primary execution prompt:
 
 - see [onboarding-prompt.md](./onboarding-prompt.md)
 - for a saved target example, see [examples/onboarding-output.preferences.example.md](./examples/onboarding-output.preferences.example.md)
+- for answer-to-field mapping, see [onboarding-mapping.zh-CN.md](./onboarding-mapping.zh-CN.md)
 
 Optional later refinement:
 
