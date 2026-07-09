@@ -2,6 +2,11 @@
 
 Use this reference when running `full-profile` from scratch.
 
+Compatibility note:
+
+- this file remains a live compatibility entry
+- the canonical structure contract for this workflow is now [core/source-pack-contract.md](core/source-pack-contract.md)
+
 The goal of the source-pack is to stabilize evidence before prose generation.
 
 ## What a source-pack is

@@ -138,6 +138,12 @@
 - [SKILL.md](./SKILL.md)  
   主协议。核心规则都在这里。
 
+- [references/core/artifact-contract.md](./references/core/artifact-contract.md)  
+  最短的 artifact / mode / gate 结构协议。
+
+- [references/core/source-pack-contract.md](./references/core/source-pack-contract.md)  
+  `source-pack workflow` 的 canonical contract。
+
 - [agents/openai.yaml](./agents/openai.yaml)  
   给 agent/UI 用的基础说明。
 
@@ -152,6 +158,9 @@
 
 - [references/roadmap-derivation.md](./references/roadmap-derivation.md)  
   roadmap 的派生规则。
+
+- [references/eval/README.md](./references/eval/README.md)  
+  repo 内建最小回归评估入口。
 
 ### 当前的分层架构
 
@@ -226,6 +235,8 @@
 - [source-of-truth 说明](./references/source-of-truth.md)
 - [domain pack contract](./references/domains/domain-pack-contract.md)
 - [user overlay contract](./references/users/user-overlay-contract.md)
+- [artifact contract](./references/core/artifact-contract.md)
+- [source-pack contract](./references/core/source-pack-contract.md)
 
 ---
 
@@ -612,6 +623,12 @@ references/users/your-name/preferences.md
 - roadmap 派生协议
 - `core + domain + user` 的兼容式分层架构
 
+当前版本也新增了 3 个更适合长期维护的结构点：
+
+- `artifact / mode / gate` 的 canonical contract
+- `source-pack workflow` 的 canonical contract
+- repo 内建 `eval` 目录与固定 case
+
 当前还额外提供了：
 
 - 新手向中文 README
@@ -623,6 +640,7 @@ references/users/your-name/preferences.md
 
 - 保留旧的顶层 `references/*.md` 路径，避免破坏现有效果
 - 同时逐步补齐分层结构，方便开源后给更多人用
+- 先把最容易漂移的 slice 收进 `core contract`，而不是一次性大迁移
 
 也就是说，它现在是：
 
@@ -648,6 +666,15 @@ references/users/your-name/preferences.md
 
 roadmap 是派生产物。  
 它必须继承上游证据边界。
+
+### 4. 改结构前先跑最小 eval
+
+优先看：
+
+- [references/eval/rubric.md](./references/eval/rubric.md)
+- [references/eval/cases/full-profile-single-scholar.md](./references/eval/cases/full-profile-single-scholar.md)
+- [references/eval/cases/positioning-three-scholars.md](./references/eval/cases/positioning-three-scholars.md)
+- [references/eval/cases/roadmap-from-positioning.md](./references/eval/cases/roadmap-from-positioning.md)
 
 ---
 

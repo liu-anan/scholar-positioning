@@ -22,8 +22,11 @@
 1. 看 `README.md`
 2. 看本文件
 3. 看 [source-of-truth.md](./source-of-truth.md)
-4. 看 [domains/domain-pack-contract.md](./domains/domain-pack-contract.md)
-5. 看 [users/user-overlay-contract.md](./users/user-overlay-contract.md)
+4. 看 [core/artifact-contract.md](./core/artifact-contract.md)
+5. 看 [core/source-pack-contract.md](./core/source-pack-contract.md)
+6. 看 [domains/domain-pack-contract.md](./domains/domain-pack-contract.md)
+7. 看 [users/user-overlay-contract.md](./users/user-overlay-contract.md)
+8. 最后看 [eval/rubric.md](./eval/rubric.md)
 
 ### 情况 C：我只想拆一个学者
 
@@ -110,3 +113,9 @@
 - 所有 roadmap 细则
 
 这些更适合维护者或第二阶段扩展时再看。
+
+但如果你这次是在改协议结构，而不是第一次试用，就不要跳过：
+
+- [core/artifact-contract.md](./core/artifact-contract.md)
+- [core/source-pack-contract.md](./core/source-pack-contract.md)
+- [eval/rubric.md](./eval/rubric.md)

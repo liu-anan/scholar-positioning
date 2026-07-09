@@ -7,6 +7,11 @@ description: Build evidence-bounded scholar profiles and scholar positioning map
 
 Build scholar artifacts with explicit evidence and coverage boundaries. Allow inference, but never leave it unlabeled. Keep outputs explicit, legible, and auditable.
 
+For the shortest canonical boundary contracts, read:
+
+- [references/core/artifact-contract.md](references/core/artifact-contract.md)
+- [references/core/source-pack-contract.md](references/core/source-pack-contract.md)
+
 ## Layered Architecture
 
 Treat this skill as one architecture with three layers:
@@ -78,6 +83,8 @@ Use exactly these artifact types:
 - `profile`: a single-scholar dossier answering "who is this scholar?"
 - `positioning`: a multi-scholar structure answering "where do these scholars sit relative to each other?"
 - `roadmap`: an action hypothesis answering "what route looks promising next?"
+
+For the shortest canonical definition of artifact boundaries, upstream dependency, and mode selection, see [references/core/artifact-contract.md](references/core/artifact-contract.md).
 
 ## Execution Modes
 
@@ -249,6 +256,7 @@ Good test:
 Treat `full-profile` as a from-scratch reconstruction task.
 
 Before drafting the dossier body, first build a compact `source-pack`.
+For the canonical workflow boundary, also read [references/core/source-pack-contract.md](references/core/source-pack-contract.md).
 See [references/source-pack.md](references/source-pack.md).
 For retrieval order and stop conditions, also read [references/retrieval-protocol.md](references/retrieval-protocol.md).
 For the working scaffold, use [references/source-pack-template.md](references/source-pack-template.md).
@@ -1033,6 +1041,8 @@ Do not let inaccessible full texts justify stronger claims than the available ev
 
 If the user explicitly asks for a roadmap after `positioning`, do not improvise it from memory of the map.
 Read [references/roadmap-derivation.md](references/roadmap-derivation.md) and inherit evidence limits from the upstream artifacts.
+
+When changing this skill, validate behavior against the fixed repo cases in [references/eval/README.md](references/eval/README.md).
 
 ## Map Semantics
 

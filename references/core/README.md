@@ -2,6 +2,11 @@
 
 This folder is the stable protocol layer.
 
+Canonical protocol slices already converged here:
+
+- [artifact-contract.md](./artifact-contract.md)
+- [source-pack-contract.md](./source-pack-contract.md)
+
 Keep here:
 
 - artifact model
@@ -18,7 +23,7 @@ Current note:
 
 - the public package is still in a compatibility-first layered stage
 - top-level `references/*.md` remain the current live protocol entry files
-- this folder describes the intended stable home for protocol assets
+- but the two files above should now be treated as the canonical home for those slices
 
 See also:
 

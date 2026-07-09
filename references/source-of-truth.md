@@ -4,13 +4,18 @@
 
 ## 当前状态
 
-这个项目目前处于**兼容式分层阶段**。
+这个项目目前仍处于**兼容式分层阶段**。
 
 意思是：
 
-- 顶层 `references/*.md` 仍然是当前真实生效入口
+- 顶层 `references/*.md` 仍然大体上是当前真实生效入口
 - `core / domains / users` 是正在收敛中的分层结构
 - 分层目录已经开始承载说明和约束，但还没有完全替代顶层入口
+
+不过，有两块高价值协议已经开始明确收敛到 `core/`：
+
+1. [core/artifact-contract.md](./core/artifact-contract.md)
+2. [core/source-pack-contract.md](./core/source-pack-contract.md)
 
 ## 当前真实生效入口
 
@@ -39,9 +44,16 @@
 如果出现“顶层文件”和分层说明不一致”的情况，当前应以：
 
 1. `SKILL.md`
-2. 顶层 `references/*.md`
+2. 已收敛 slice 对应的 `core/*-contract.md`
+3. 顶层 `references/*.md`
 
 为准。
+
+也就是说：
+
+- `artifact / mode / gate`：优先看 `core/artifact-contract.md`
+- `source-pack workflow`：优先看 `core/source-pack-contract.md`
+- 其他尚未迁入 core 的部分：仍优先看顶层 `references/*.md`
 
 ## 分层目录当前的职责
 
@@ -54,8 +66,8 @@
 
 当前状态：
 
-- 主要是说明层
-- 不是完整替代层
+- 大部分仍是说明层
+- 但 `artifact-contract` 和 `source-pack-contract` 已经开始承担 canonical role
 
 ### `domains/`
 
@@ -88,7 +100,8 @@
 先看：
 
 - `SKILL.md`
-- 顶层 `references/*.md`
+- `core/*-contract.md`
+- 其余顶层 `references/*.md`
 
 ### 改用户个性化、首次配置、示例偏好
 
@@ -105,6 +118,7 @@
 ## 当前不建议做的事
 
 - 不要只改 `core/README.md` 就以为协议已经变了
+- 不要只改 README 或 examples 就以为 artifact contract 已经变了
 - 不要把 domain pack README 当作当前唯一 taxonomy 来源
 - 不要把 user overlay 写成隐藏的协议改写层
 
