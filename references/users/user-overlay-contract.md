@@ -67,6 +67,18 @@
 references/users/<user-name>/preferences.md
 ```
 
+推荐激活方式：
+
+```text
+references/users/active-overlay.md
+```
+
+也就是说：
+
+- overlay 内容放在用户目录
+- 当前安装实例激活哪个 overlay，通过 `active-overlay.md` 表达
+- 不要把某个具体用户直接写成整个 package 的全局默认
+
 推荐内容风格：
 
 - 尽量简短
