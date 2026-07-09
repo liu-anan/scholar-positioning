@@ -295,6 +295,7 @@ references/users/template/preferences.template.md
 - [首次启动问答 prompt](./references/users/onboarding-prompt.md)
 - [onboarding 说明](./references/users/onboarding.md)
 - [问答后成品示例](./references/users/examples/onboarding-output.preferences.example.md)
+- [中文字段映射表](./references/users/onboarding-mapping.zh-CN.md)
 
 如果你想直接参考现成示例，看这里：
 
@@ -435,6 +436,7 @@ references/users/template/preferences.template.md
 
 - [references/users/onboarding.md](./references/users/onboarding.md)
 - [references/users/onboarding-prompt.md](./references/users/onboarding-prompt.md)
+- [references/users/onboarding-mapping.zh-CN.md](./references/users/onboarding-mapping.zh-CN.md)
 - [references/users/examples/onboarding-output.preferences.example.md](./references/users/examples/onboarding-output.preferences.example.md)
 - [references/users/examples/README.md](./references/users/examples/README.md)
 
@@ -640,10 +642,11 @@ roadmap 是派生产物。
 2. [SKILL.md](./SKILL.md)
 3. [references/users/onboarding.md](./references/users/onboarding.md)
 4. [references/users/onboarding-prompt.md](./references/users/onboarding-prompt.md)
-5. [references/users/template/preferences.template.md](./references/users/template/preferences.template.md)
-6. [references/users/examples/README.md](./references/users/examples/README.md)
-7. [references/users/examples/onboarding-output.preferences.example.md](./references/users/examples/onboarding-output.preferences.example.md)
-8. [references/retrieval-protocol.md](./references/retrieval-protocol.md)
+5. [references/users/onboarding-mapping.zh-CN.md](./references/users/onboarding-mapping.zh-CN.md)
+6. [references/users/template/preferences.template.md](./references/users/template/preferences.template.md)
+7. [references/users/examples/README.md](./references/users/examples/README.md)
+8. [references/users/examples/onboarding-output.preferences.example.md](./references/users/examples/onboarding-output.preferences.example.md)
+9. [references/retrieval-protocol.md](./references/retrieval-protocol.md)
 
 如果你想看“这个 skill 的个性化层长什么样”，看这里：
 
