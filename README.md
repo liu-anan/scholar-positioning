@@ -203,12 +203,22 @@
 - [references/users/template/README.md](./references/users/template/README.md)
 - [references/users/template/preferences.template.md](./references/users/template/preferences.template.md)
 
-当前仓库里还放了一个真实示例：
+当前仓库提供的是“示例入口”，不是某个用户的默认配置：
 
-- [references/users/liutingnan/README.md](./references/users/liutingnan/README.md)
-- [references/users/liutingnan/preferences.md](./references/users/liutingnan/preferences.md)
+- [references/users/examples/README.md](./references/users/examples/README.md)
+- [references/users/template/README.md](./references/users/template/README.md)
+- [references/users/template/preferences.template.md](./references/users/template/preferences.template.md)
 
-这个示例只是演示“怎么做 overlay”，不是要求所有人都照抄。
+它们的作用是演示“怎么做 overlay”，不是要求所有人都照抄某一份个人配置。
+
+当前推荐的架构入口是：
+
+- [references/users/active-overlay.md](./references/users/active-overlay.md)
+
+也就是说：
+
+- 本地安装可以通过 `active-overlay` 指向你自己的 `preferences.md`
+- 开源包本身不应把某个具体用户写成全局默认
 
 如果你想快速理解“新用户该怎么走、当前哪里才是真正生效入口、后续扩展有哪些硬边界”，优先看：
 
@@ -655,9 +665,9 @@ roadmap 是派生产物。
 8. [references/users/examples/onboarding-output.preferences.example.md](./references/users/examples/onboarding-output.preferences.example.md)
 9. [references/retrieval-protocol.md](./references/retrieval-protocol.md)
 
-如果你想看“这个 skill 的个性化层长什么样”，看这里：
+如果你想看“这个 skill 的个性化层长什么样”，优先看这里：
 
-- [references/users/liutingnan/preferences.md](./references/users/liutingnan/preferences.md)
+- [references/users/examples/README.md](./references/users/examples/README.md)
 - [references/users/examples/automated-driving.preferences.example.md](./references/users/examples/automated-driving.preferences.example.md)
 - [references/users/examples/accident-safety.preferences.example.md](./references/users/examples/accident-safety.preferences.example.md)
 - [references/users/examples/energy-management.preferences.example.md](./references/users/examples/energy-management.preferences.example.md)
