@@ -106,6 +106,7 @@ If the user does not yet want to write files:
 Reference shape:
 
 - see [examples/onboarding-output.preferences.example.md](./examples/onboarding-output.preferences.example.md)
+- for a Chinese mapping guide, see [onboarding-mapping.zh-CN.md](./onboarding-mapping.zh-CN.md)
 
 ## Minimal mapping guidance
 
